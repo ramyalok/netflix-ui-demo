@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login/Signup Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--modern login -->
+    <div class="container">
+      <!-- login Form -->
+      <div class="form-box login">
+        <form action="#">
+          <h1>Login</h1>
+          <div class="input-box">
+            <input type="text" id="lu" placeholder="Username" required />
+            <i class="bx bxs-user"></i>
+            <div class="error"></div>
+          </div>
+          <div class="input-box">
+            <input type="email" id="le" placeholder="Email" required />
+            <i class="bx bxs-envelope"></i>
+            <div class="error"></div>
+          </div>
+          <div class="input-box">
+            <input type="password" id="lp" placeholder="Password" required />
+             
+            <i class="bx bx-show toggle-password" onclick="togglePassword('lp', this)"></i>
+            <div class="error"></div>
+          </div>
+          <div class="forgot-link">
+            <a href="#"
+              ><p class="fp" onclick="Forget()">Forget password?</p></a
+            >
+          </div>
+          <button type="submit" class="btn" onclick="Login(event)">
+            Login
+          </button>
+          <p>or login with social platforms</p>
+          <div class="social-icons">
+            <a href="https://www.google.com/" target="_blank"
+              ><i class="bx bxl-google"></i
+            ></a>
+            <a href="https://www.facebook.com/" target="_blank"
+              ><i class="bx bxl-facebook"></i
+            ></a>
+            <a href="https://git-scm.com/install/windows" target="_blank"
+              ><i class="bx bxl-github"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/ramya-kannan-345533237"
+              target="_blank"
+              ><i class="bx bxl-linkedin"></i
+            ></a>
+          </div>
+        </form>
+      </div>
+      <!-- Register form -->
+      <div class="form-box register">
+        <form action="#">
+          <h1>Registration</h1>
+          <div class="input-box">
+            <input type="text" id="ru" placeholder="Username" required />
+            <i class="bx bxs-user"></i>
+            <div class="error"></div>
+          </div>
+          <div class="input-box">
+            <input type="email" id="re" placeholder="Email" required />
+            <i class="bx bxs-envelope"></i>
+            <div class="error"></div>
+          </div>
+          <div class="input-box">
+            <input type="password" id="rp" placeholder="Password" required />
+         
+            <i class="bx bx-show toggle-password" onclick="togglePassword('rp', this)"></i>
+            <div class="error"></div>
+          </div>
+          <div class="input-box">
+            <input
+              type="password"
+              id="rrp"
+              placeholder="Re-type Password"
+              required
+            />
+            
+            <i class="bx bx-show toggle-password" onclick="togglePassword('rrp', this)"></i>
+            <div class="error"></div>
+          </div>
+          <button type="submit" class="btn" onclick="Register(event)">
+            Register
+          </button>
+          <p>or register with social platforms</p>
+          <div class="social-icons">
+            <a href="https://www.google.com/" target="_blank"
+              ><i class="bx bxl-google"></i
+            ></a>
+            <a href="https://www.facebook.com/" target="_blank"
+              ><i class="bx bxl-facebook"></i
+            ></a>
+            <a href="https://git-scm.com/install/windows" target="_blank"
+              ><i class="bx bxl-github"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/ramya-kannan-345533237"
+              target="_blank"
+              ><i class="bx bxl-linkedin"></i
+            ></a>
+          </div>
+        </form>
+      </div>
+      <!-- Forgot Password Form -->
+      <div class="form-box forget">
+        <form action="#">
+          <h1>Forgot Password</h1>
+
+          <div class="input-box">
+            <input
+              type="email"
+              id="fe"
+              placeholder="Enter your email"
+              required
+            />
+            <i class="bx bxs-envelope"></i>
+            <div class="error"></div>
+          </div>
+
+          <button type="submit" class="btn" onclick="Forget(event)">
+            Send Reset Link
+          </button>
+
+          <p>Remember password?</p>
+          <button type="button" class="btn login-btn2">Back to Login</button>
+        </form>
+      </div>
+
+      <div class="toggle-box">
+        <!-- toggle box left -->
+        <div class="toggle-panel toggle-left">
+          <h1>Hello, Welcome!</h1>
+          <p>Don't have an account?</p>
+          <button class="btn register-btn">Register</button>
+        </div>
+        <!-- toggle box right -->
+        <div class="toggle-panel toggle-right">
+          <h1>Welcome Back!</h1>
+          <p>Already have an account?</p>
+          <button class="btn login-btn">Login</button>
+        </div>
+      </div>
+    </div>
+ 
+    <script src="index.js"></script>
+  </body>
+</html>
