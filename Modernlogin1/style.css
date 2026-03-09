@@ -8,22 +8,16 @@
   text-decoration: none;
   list-style: none;
 }
-.main-wrapper{
-  min-height:100vh;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
-  gap:20px;
-}
+ 
 .container1{
   width:100%;
   max-width:800px;
 }
 body {
     display: flex;
-  flex-direction:column;
-  justify-content: center;gap:20px;
+ 
+  justify-content: center;
+  gap:20px;
   align-items: center;
   min-height: 100vh;
   background: linear-gradient(90deg, #4d3e3e, #c72e2e, #b10d0d);
@@ -32,10 +26,11 @@ body {
 .container {
 
   position: relative;
-  width:800px; max-width:95%;
-  height: auto;
+  width:800px;
+ 
+  height:950px;
   background: #fff;
-  margin:0;
+  margin:20px;
   border-radius: 30px;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
    
