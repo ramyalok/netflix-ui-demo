@@ -23,8 +23,8 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
-  width: 950px;
-  height: 650px;
+  width: auto;
+  height: auto;
   background: #fff;
   margin:50px auto;
   border-radius: 30px;
