@@ -10,18 +10,16 @@
 }
 
 body {
- 
+    display: flex;
+  flex-direction:column;
+  justify-content: center;gap:20px;
+  align-items: center;
   min-height: 100vh;
   background: linear-gradient(90deg, #4d3e3e, #c72e2e, #b10d0d);
 }
-.container1
-{
-  width:100%;
-}
+ 
 .container {
-   display: flex;
-  justify-content: center;
-  align-items: center;
+
   position: relative;
   width: auto;
   height: auto;
