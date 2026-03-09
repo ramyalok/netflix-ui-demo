@@ -16,9 +16,9 @@ body {
 }
 
 .container {
-   display: flex;
+   /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   position: relative;
   width: 950px;
   height: 650px;
